@@ -6,7 +6,7 @@ camera = PiCamera()
 
 camera.start_preview()
 sleep(1)
-for filename in camera.capture_continuous('./img/img{timestamp:%Y-%m-%d-%H-%M-%S}.jpg'):
+for filename in camera.capture_continuous('/home/pi/technaka/img/img{timestamp:%Y-%m-%d-%H-%M-%S}.jpg'):
 	print('Captured %s' % filename)
 	sleep(1)
 
