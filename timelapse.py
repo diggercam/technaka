@@ -64,9 +64,9 @@ with picamera.PiCamera() as camera:
                 os.chdir(img_dir)
                 command = "yadfig2"
                 os.system(command)
-                os.chdir('/home/pi/technaka/')
-                command = "./ftp.sh"
-                os.system(command)
+                #os.chdir('/home/pi/technaka/')
+                #command = "./ftp.sh"
+                #os.system(command)
                 break
         except:
             print("You're Offline")
